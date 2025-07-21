@@ -1,4 +1,4 @@
-from pyseq_control.base_instruments import BasePump, BaseValve
+from pyseq_core.base_instruments import BasePump, BaseValve
 from typing import Union
 
 

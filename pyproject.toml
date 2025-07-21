@@ -1,12 +1,24 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "pyseq-template"
-version = "0.1.0"
+dynamic = ["version"]
+authors = [
+  { name="ADD YOUR NAME", email="ADD YOUR EMAIL" },
+]
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
 dependencies = [
     "attrs>=25.3.0",
     "pydantic>=2.11.7",
+    "pyseq-core>=1.0.4a0",
     "pyyaml>=6.0.2",
     "tomlkit>=0.13.3",
 ]
@@ -20,3 +32,23 @@ dev = [
     "ruff>=0.12.4",
     "ty>=0.0.1a15",
 ]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
+version_file = "src/_version.py"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = [
+    "tests",
+]
+log_format = "%(asctime)s %(levelname)s %(message)s"
+log_date_format = "%Y-%m-%d %H:%M:%S"
+log_cli_level = "DEBUG"
+asyncio_default_fixture_loop_scope = "module"
+asyncio_default_test_loop_scope = "module"
+
