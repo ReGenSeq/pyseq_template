@@ -1,5 +1,8 @@
 from pyseq_core.base_instruments import BasePump, BaseValve
 from typing import Union
+import logging
+
+LOGGER = logging.getLogger("PySeq")
 
 
 class Pump(BasePump):
@@ -130,8 +133,8 @@ class Valve(BaseValve):
     async def initialize(self):
         """Initializes the valve hardware.
 
-        This method perfrom any necessary hardware configurations and set the
-        Valve to the initial _port value.
+        This method performs any necessary hardware configurations and sets the
+        Valve to the initial_port position.
         """
         pass
 
@@ -139,7 +142,7 @@ class Valve(BaseValve):
         """Shuts down the valve hardware.
 
         This method should gracefully disconnect from the valve, release
-        any resources, and put the valve into a safe, parked, or off state.
+        any resources, and put the valve into a safe state.
         """
         pass
 
@@ -174,7 +177,7 @@ class Valve(BaseValve):
             **kwargs: Additional keyword arguments that might be specific to
                       a particular valve implementation (e.g., speed, timeout).
         Returns:
-            bool: True if succesfull select port, otherwise False.
+            bool: True if successfully selected port, otherwise False.
         """
         pass
 
@@ -187,4 +190,3 @@ class Valve(BaseValve):
         Returns:
             Union[str, int]: The identifier of the current active port.
         """
-        pass
