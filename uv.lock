@@ -276,7 +276,7 @@ wheels = [
 
 [[package]]
 name = "pyseq-core"
-version = "1.0.4a0"
+version = "1.0.5a0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
@@ -284,15 +284,14 @@ dependencies = [
     { name = "pyyaml" },
     { name = "tomlkit" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/39/da/f31a72ffa1dabdf8b48cf36f24ad5c46c0fdfa2a148a5c52af8f75f6ddc2/pyseq_core-1.0.4a0.tar.gz", hash = "sha256:47de18d4cd3d1d9511b9cad69ce5342cfbb08c6b14ad5fccac12cea750794968", size = 62387, upload-time = "2025-07-21T16:46:41.026Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a0/e8/846764a7cf1ff375a5d894cc8b9db6a8bb9fc187deea79df0f24e0920a3f/pyseq_core-1.0.5a0.tar.gz", hash = "sha256:abfdb625a440b250cde1ca4dc4502871c0712d816a2dc22f7413a278edaa0fe3", size = 71232, upload-time = "2025-07-24T18:02:11.455Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f7/6f/b6a75ad7f9030be2ab5961c10097a80a7dbd378618d4c5f68718b8b0d6ca/pyseq_core-1.0.4a0-py3-none-any.whl", hash = "sha256:af9b19bed4ffadbe66a85884b5a6982a644a33bbec8bb9cfe16ef55a2f326440", size = 31944, upload-time = "2025-07-21T16:46:39.927Z" },
+    { url = "https://files.pythonhosted.org/packages/0a/48/f4297a8f218aa20002e1cfba227d100099a1c43e40e3345c2cd3a5862448/pyseq_core-1.0.5a0-py3-none-any.whl", hash = "sha256:93c0f877e0240447535b5d2b80b7ef38b7397000888b36f2b3dacde9d56897e8", size = 41137, upload-time = "2025-07-24T18:02:09.934Z" },
 ]
 
 [[package]]
 name = "pyseq-template"
-version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "attrs" },
     { name = "pydantic" },
@@ -315,7 +314,7 @@ dev = [
 requires-dist = [
     { name = "attrs", specifier = ">=25.3.0" },
     { name = "pydantic", specifier = ">=2.11.7" },
-    { name = "pyseq-core", specifier = ">=1.0.4a0" },
+    { name = "pyseq-core", specifier = ">=1.0.5a0" },
     { name = "pyyaml", specifier = ">=6.0.2" },
     { name = "tomlkit", specifier = ">=0.13.3" },
 ]

@@ -1,3 +1,7 @@
+# Hardware Setting for sequencers
+# Settings for multiple sequencers or setting versions can be stored in this file
+# The settings used is specified by `name`
+# Software settings should go in default.toml
 name: Test                                                                      # name of sequencer
 Test:                                                                           # settings for a specific sequencer
   flowcells: ['A', 'B']                                                         # list of flow cell names
