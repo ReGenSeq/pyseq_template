@@ -20,8 +20,8 @@ body:
         Try to include a minimal reproducible example and an environment or lock file if possible. 
 
         If applicable, add screenshots to help explain your problem.
-      validations:
-        required: false
+    validations:
+      required: false
 
   - type: input
     id: version
