@@ -21,7 +21,7 @@ body:
 
         If applicable, add screenshots to help explain your problem.
       validations:
-        required: true
+        required: false
 
   - type: input
     id: version
@@ -45,7 +45,7 @@ body:
         - Illumina NovaSeq 6000
         - Other
     validations: 
-      required: true
+      required: false
 
   - type: input
     id: os
@@ -54,4 +54,4 @@ body:
       description: What operating system is the sequencer running on?
       placeholder: e.g. Windows 10
     validations: 
-      required: true
+      required: false
