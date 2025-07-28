@@ -38,6 +38,7 @@ body:
       label:  Sequencer
       description: Which sequencer are you using?
       multiple: false
+      default: Illumina HiSeq 2500
       options: 
         - Illumina HiSeq 2000
         - Illumina HiSeq 2500
