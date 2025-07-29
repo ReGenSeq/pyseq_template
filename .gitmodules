@@ -1,0 +1,3 @@
+[submodule "pyseq_core"]
+	path = pyseq_core
+	url = https://github.com/krpandit/pyseq_core.git
