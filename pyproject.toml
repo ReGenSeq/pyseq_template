@@ -39,6 +39,7 @@ Issues = "https://github.com/pypa/sampleproject/issues"
 
 [tool.setuptools_scm]
 version_file = "src/_version.py"
+fallback_version = "0.0.0"  # for dependabot
 
 [tool.setuptools.packages.find]
 where = ["src"]
