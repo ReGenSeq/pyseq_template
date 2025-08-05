@@ -275,22 +275,7 @@ wheels = [
 ]
 
 [[package]]
-name = "pyseq-core"
-version = "1.0.5a0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "attrs" },
-    { name = "pydantic" },
-    { name = "pyyaml" },
-    { name = "tomlkit" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/a0/e8/846764a7cf1ff375a5d894cc8b9db6a8bb9fc187deea79df0f24e0920a3f/pyseq_core-1.0.5a0.tar.gz", hash = "sha256:abfdb625a440b250cde1ca4dc4502871c0712d816a2dc22f7413a278edaa0fe3", size = 71232, upload-time = "2025-07-24T18:02:11.455Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/0a/48/f4297a8f218aa20002e1cfba227d100099a1c43e40e3345c2cd3a5862448/pyseq_core-1.0.5a0-py3-none-any.whl", hash = "sha256:93c0f877e0240447535b5d2b80b7ef38b7397000888b36f2b3dacde9d56897e8", size = 41137, upload-time = "2025-07-24T18:02:09.934Z" },
-]
-
-[[package]]
-name = "pyseq-template"
+name = "pyseq"
 source = { editable = "." }
 dependencies = [
     { name = "attrs" },
@@ -327,6 +312,21 @@ dev = [
     { name = "pytest-cov", specifier = ">=6.2.1" },
     { name = "ruff", specifier = ">=0.12.4" },
     { name = "ty", specifier = ">=0.0.1a15" },
+]
+
+[[package]]
+name = "pyseq-core"
+version = "1.0.5a0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "attrs" },
+    { name = "pydantic" },
+    { name = "pyyaml" },
+    { name = "tomlkit" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a0/e8/846764a7cf1ff375a5d894cc8b9db6a8bb9fc187deea79df0f24e0920a3f/pyseq_core-1.0.5a0.tar.gz", hash = "sha256:abfdb625a440b250cde1ca4dc4502871c0712d816a2dc22f7413a278edaa0fe3", size = 71232, upload-time = "2025-07-24T18:02:11.455Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0a/48/f4297a8f218aa20002e1cfba227d100099a1c43e40e3345c2cd3a5862448/pyseq_core-1.0.5a0-py3-none-any.whl", hash = "sha256:93c0f877e0240447535b5d2b80b7ef38b7397000888b36f2b3dacde9d56897e8", size = 41137, upload-time = "2025-07-24T18:02:09.934Z" },
 ]
 
 [[package]]
