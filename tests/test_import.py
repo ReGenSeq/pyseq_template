@@ -1,5 +1,5 @@
-def test_import():
-    import pyseq._version as v
+def test_version():
+    import importlib.metadata
 
-    print(v.version)
+    print(importlib.metadata.version("pyseq"))
     assert True
