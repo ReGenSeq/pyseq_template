@@ -3,7 +3,7 @@ requires = ["setuptools>=64", "setuptools-scm>=8"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pyseq"
+name = "pyseq"  # UPDATE TO "pyseq_sequencer"
 dynamic = ["version"]
 authors = [
   { name="Your Name", email="your_name@email.com" },
@@ -38,7 +38,7 @@ Homepage = "https://github.com/pypa/sampleproject"
 Issues = "https://github.com/pypa/sampleproject/issues"
 
 [tool.setuptools_scm]
-version_file = "src/_version.py"
+version_file = "src/pyseq/_version.py" # CHANGE TO ""src/package_name/_version.py"
 fallback_version = "0.0.0"  # for dependabot
 
 [tool.setuptools.packages.find]
