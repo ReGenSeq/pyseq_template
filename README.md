@@ -14,5 +14,7 @@ Template for PySeq Sequencers
 - [ ] .github/workflows/python-publish.yml
     - [ ] jobs.pypi-publish.environment.url = https://pypi.org/project/{sequencer alias}/${{ github.event.release.name }}
 
-
+- [ ] rename src/pyseq to src/project.name
+- [ ] update src/__init__.py 
+    - [ ] ALIAS = {sequencer alias}
 
